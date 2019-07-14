@@ -11,10 +11,18 @@ code {
     font-size: 20px;
 }
 
-.css-rw7e0a-Flex-Split > *:first-child {
-    padding-right: 30px;
+[class*=Split] > *:first-child {
+    padding-right: 20px;
+}
+
+[class*=Split] > *:last-child {
+    padding-left: 20px;
 }
 
 pre {
     line-height: 1 !important;
+}
+
+[class*=Image] {
+    background-size: contain !important;
 }
