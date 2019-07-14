@@ -111,8 +111,8 @@ const sum = (list) => {
 Declarative
 ```js
 const sum = (list) => {
-const add = ((x, y) => x + y);
-    return list.reduce(add);
+    const add = ((x, y) => x + y);
+    return list.reduce(add, 0);
 }
 ```
 
