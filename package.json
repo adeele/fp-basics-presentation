@@ -17,7 +17,9 @@
   "author": "Grzegorz Rozdzialik",
   "license": "MIT",
   "dependencies": {
-    "mdx-deck": "^2.3.2",
+    "lodash": "^4.17.14",
+    "lodash.merge": "^4.6.2",
+    "mdx-deck": "^2.5.0",
     "raw-loader": "^2.0.0"
   },
   "devDependencies": {
