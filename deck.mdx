@@ -30,7 +30,7 @@ Adrianna Małkiewicz
                 paradigm characteristics
             </li>
             <li>
-                comparison to objective programming
+                comparison to imperative programming
             </li>
         </ul>
     </li>
@@ -58,6 +58,66 @@ Adrianna Małkiewicz
     </li>
   </Appear>
 </ol>
+
+---
+
+## Introduction to functional programming
+
+Functional programming treats computation as the evaluation of mathematical functions.
+Programming is done with expressions or declarations instead of statements.
+
+[Wikipedia](https://en.wikipedia.org/wiki/Functional_programming)
+
+---
+
+### Paradigm characteristics
+
+<ul>
+  <Appear>
+    <li>
+        <b>Statelessness</b> - an operation is not sensitive to the state of the computation
+    </li>
+    <li>
+        <b>Referential transparency</b> - an expression can be replaced with its corresponding value without changing the
+        program's behavior
+    </li>
+    <li>
+        <b>Immutability</b> - an object whose state cannot be modified after it is created
+    </li>
+  </Appear>
+</ul>
+
+---
+
+### Comparison to imperative programming
+
+<Split>
+<div>
+
+Imperative
+```js
+const sum = (list) => {
+    let result = 0;
+    for (element of list) {
+        result += element;
+    }
+    return result;
+}
+```
+
+</div>
+<div>
+
+Declarative
+```js
+const sum = (list) => {
+const add = ((x, y) => x + y);
+    return list.reduce(add);
+}
+```
+
+</div>
+</Split>
 
 ---
 
