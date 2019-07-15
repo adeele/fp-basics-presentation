@@ -19,6 +19,10 @@ code {
     padding-left: 20px;
 }
 
+[class*=Split] > * {
+    min-width: 500px;
+}
+
 pre {
     line-height: 1 !important;
 }
