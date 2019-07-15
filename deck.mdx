@@ -287,11 +287,13 @@ twice((x) => x + 3, 1); // 7
 
 ### Concepts
 
-**Nested function** - a function which is defined within another function, the enclosing function
+**Nested function** - a function which is defined within another function
 
 **Non-local variable** - a variable that is not defined in the local scope, but also not necessarily in the global one.
 
 **Closure** - a record storing a function together with an environment.
+
+<Split>
 
 ```js
 const doubleSum = (x, y) => {
@@ -299,8 +301,16 @@ const doubleSum = (x, y) => {
     return sum(x, y) * 2;
 };
 doubleSum(1, 2); // 6
+```
+
+```js
+const sum = (a) => (b) => a + b;
+const add5 = sum(5);
+add5(10); // 15
 
 ```
+
+</Split>
 
 ---
 
