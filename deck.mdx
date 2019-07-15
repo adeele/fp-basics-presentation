@@ -212,6 +212,117 @@ In math-based projects
 
 ---
 
+### Concepts
+
+**Pure functions** - function which has no side effects and its return value is the same for the same arguments.
+
+**Referential transparency** - an expression can be replaced with its corresponding value without changing the program's
+behavior
+
+<Split>
+<div>
+
+Imperative
+```js
+let x = 1;
+x = x + 1; // 2
+x = x + 1; // 3
+```
+
+</div>
+<div>
+
+Declarative
+```js
+const plusOne = (x) => x + 1;
+plusOne(1); // 2
+plusOne(1); // 2
+
+```
+
+</div>
+</Split>
+
+---
+
+### Concepts
+
+**Higher-order functions** - passing functions as arguments to other functions or returning functions as results from
+other functions
+
+<Split>
+<div>
+
+Custom function composition
+```js
+const twice = (x, y) => x(x(y));
+const add3 = (x) => x + 3;
+twice(add3, 1); // 7
+
+```
+
+</div>
+<div>
+
+* map
+* filter
+* reduce
+
+</div>
+</Split>
+
+---
+
+### Concepts
+
+**Anonymous function** - a function definition that is not bound to an identifier
+
+```js
+const twice = (x, y) => x(x(y));
+twice((x) => x + 3, 1); // 7
+
+```
+
+---
+
+### Concepts
+
+**Nested function** - a function which is defined within another function, the enclosing function
+
+**Non-local variable** - a variable that is not defined in the local scope, but also not necessarily in the global one.
+
+**Closure** - a record storing a function together with an environment.
+
+```js
+const doubleSum = (x, y) => {
+    const sum = (x, y) => x + y;
+    return sum(x, y) * 2;
+};
+doubleSum(1, 2); // 6
+
+```
+
+---
+
+### Concepts
+
+**Recursion** - a method of solving a problem where the solution depends on solutions to smaller instances of the same
+problem (as opposed to iteration)
+
+```js
+const factorial = (n) => {
+    if (n <= 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+factorial(10); // 3628800
+
+```
+
+---
+
+
 ## Questions
 
 ---
